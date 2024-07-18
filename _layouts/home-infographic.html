@@ -3,12 +3,7 @@
 layout: page
 ---
 {%- assign items = site.data[site.metadata] | where_exp: 'item', 'item.objectid != nil' -%}
-<!doctype html>
-<html lang = "en" class = "h-100">
-  <head prefix = og: http://ogp.me/ns#">
-    {% include head/head.html %}
-  </head>
-   <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
+  <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
     {% include collection-nav.html %}
     {% include collection-banner.html %}
   <main id="maincontent" role="main" class="flex-shrink-0 container my-3">
