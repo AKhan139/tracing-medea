@@ -4,7 +4,6 @@ layout: page
 ---
 {%- assign items = site.data[site.metadata] | where_exp: 'item', 'item.objectid != nil' -%}
     {% include collection-nav.html %}
-    {% include collection-banner.html %}
   <main id="maincontent" role="main" class="flex-shrink-0 container my-3">
 <div class="row">
   <div class="col-md-8">
